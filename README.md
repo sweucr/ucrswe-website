@@ -6,8 +6,9 @@ It is hosted on [ucrswe.org](ucrswe.org).
 
 Current Bugs
 ---
-- N/A
+- 10/26/18 | Sponsor logos not showing on Mina's computer
 
-Changelog
+Structural Changelog - not including event updates
 ---
 - 10/25/18 | New repo, published from [old repo](https://github.com/dlscarmina/swe2018).
+- 10/26/18 | Updated meta tags, formatted whitespace
