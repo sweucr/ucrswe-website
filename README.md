@@ -7,6 +7,7 @@ It is hosted on [ucrswe.org](https://ucrswe.org/).
 Current Bugs
 ---
 - 10/26/18 | Sponsor logos not showing on Mina's computer
+- 09/09/19 | Officer Pictures for 2019-2020 not center on Allison's computer
 
 Structural Changelog - not including event updates
 ---
