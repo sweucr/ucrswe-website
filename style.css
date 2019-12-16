@@ -64,7 +64,7 @@
 		
 		.banner_title1 span:hover {
 			color: white;
-			text-shadow: 5px 5px 2px #4497CB;
+			text-shadow: 5px 5px 2px #A9A8A9;
 			
 			-webkit-transition: all 0.5s ease-out;
 			transition: all 0.5s ease-out;
@@ -233,14 +233,15 @@
 		}
 		
 		.nav_sec:hover {
-			color: #63B0BB;
+			color: #5A5377;
 			
 			-webkit-transition: color 0.3s ease-out;
 			transition: color 0.3s ease-out;
 		}
 		
 		#dropdown:hover {
-			color: white;
+			-webkit-transition: color 0.3s ease-out;
+			transition: color 0.3s ease-out;
 		}
 		
 		.dropdown {
@@ -306,7 +307,7 @@
 		.footer {
 			display: block;
 			
-			background-color: #4497CB;
+			background-color: #5A5377;
 			padding-top: 1vh;
 			padding-bottom: 1vh;
 			
@@ -375,7 +376,7 @@
 			font-size: 3.25vw;
 			font-weight: bold;
 			font-style: oblique;
-			color: #4497CB;
+			color: #5A5377;
 		}
 		
 		.content {
@@ -807,7 +808,7 @@
 		
 /*--end CALENDAR--*/
 
-/*--start SPONSORS--*/
+/*--start SPONSORSHIPS--*/
 	
 	#sponsor_page {
 		text-align: center;
