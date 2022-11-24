@@ -854,9 +854,8 @@
 div.gallery {
 	margin: 5px; 
 	border: 1px solid #ccc; 
-	float: left; 
-	width: 180px; 
-
+	float:inline-start; 
+	width: 30px; 
 }
 
 div.gallery:hover {
@@ -868,7 +867,7 @@ div.gallery img {
 	height: auto; 
 	outline: 0;
 	border: 0;
-	position: relative;
+	position: centered;
 	
 }
 
