@@ -885,7 +885,18 @@
 		flex: 100%;
 		max-width: 100%;
 	}
-	
+
 }
+
+.Gallery {
+	align-content: center;
+	border-style: solid;
+	border-color: white;
+	padding: 10px; 
+	margin: 10px;
+	background: linear-gradient(to right, #DBC554, #ffffff);
+
+}
+
 
 /* --end Gallery --*/ 
