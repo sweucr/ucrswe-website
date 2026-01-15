@@ -1,6 +1,6 @@
 /*--start STATIC ASSETS--*/
 	html {
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Albert Sans', sans-serif;
 		background-color: white;
 	}
 	
@@ -44,12 +44,11 @@
 		}
 		
 		.banner_title1 {
-			text-shadow: 2px 2px 2px #545759;
+			text-shadow: 5px 5px 5px #A9A9AA;
 			
 			letter-spacing: 0.25vw;
-			font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+			font-family: 'Albert Sans', sans-serif;
 			font-size: 5em;
-			font-style: italic;
 			color: white;
 		}
 		
@@ -63,7 +62,7 @@
 		
 		.banner_title1 span:hover {
 			color: white;
-			text-shadow: 5px 5px 2px #A9A8A9;
+			text-shadow: 5px 5px 2px #A9A9AA;
 			
 			-webkit-transition: all 0.5s ease-out;
 			transition: all 0.5s ease-out;
@@ -72,9 +71,10 @@
 		.banner_title2 {
 			padding-bottom: 3vh;
 			
-			text-shadow: 2px 2px 3px #545759;
+			text-shadow: 5px 5px 5px #A9A9AA;
 			
 			letter-spacing: 0.5vw;
+			font-family: 'Albert Sans', sans-serif;
 			font-size:2em;
 			font-weight: bold;
 			color: white;
@@ -82,7 +82,7 @@
 		
 		.page-bg {
 			/*background-image: url('./images/banners/home.gif');*/
-			background-image: url('./home.jpg');
+			background-image: url('./images/banners/board_2025-2026.png');
 			background-position: center top;
 			background-size: cover;
 			z-index: -1;
@@ -94,25 +94,43 @@
 			-webkit-filter: blur(2.5px);
 			filter: blur(2.5px);
 		}
+
+		.rectangle-outline {
+  			top:9%;
+			left:4%;
+			width: 90%;
+			height: 80vh;
+			z-index: -1;
+  			outline: 7px;
+  			outline-style: solid;
+  			outline-color: linear-gradient(to bottom, yellow,purple);
+			/* background-image: linear-gradient(to bottom, rgba(219, 197, 84, 0.2), rgba(219, 197, 84, 0.2)); */
+  			outline-offset: 5px; 
+			position: fixed;
+			background-position: center top;
+			border-radius: 2px;
+		}
 		
 		#banner_home {
 			height: 100vh;
 		}
 		
 		#banner_officer {
-			background-image: url('./images/banners/officers_blur.jpg');
+			background-image: url('./images/banners/board_2025-2026.png');
+			height: 100vh;
+
 		}
 		
 		#banner_events {
-			background-image: url('./images/banners/events_blur.jpg');
+			background-image: url('./images/banners/board_2025-2026.png');
 		}
 		
 		#banner_sponsors {
-			background-image: url('./images/banners/ucr_blur.jpg');
+			background-image: url('./images/banners/board_2025-2026.png');
 		}
 		
 		#banner_contact {
-			background-image: url('./images/banners/contact_blur.jpg');
+			background-image: url('./images/banners/board_2025-2026.png');
 		}
 		
 		@media only screen and (max-width: 1024px) {
@@ -207,32 +225,52 @@
 			position: sticky;
 			top: 0;
 			
-			background-color: #DBC554;
+			background-color: #B8AAEE;
 			
-			padding-top: 1vh;
-			padding-bottom: 1vh;
+			padding-top: 3vh;
+			padding-bottom: 3vh;
 			
 			text-align: center;
 			letter-spacing: 0.065vw;
-			font-family: 'Open Sans Condensed', sans-serif;
+			font-family: 'Albert Sans', sans-serif;
 			font-size: 1.25em;
+			font-weight:normal;
 			color: white;
 			
 			z-index: 1;
 		}
 		
+		.nav_swe {
+			display: inline-block;
+			padding: 2px 3vw;
+			font-size: 1.5em;
+			font-weight:bolder;
+			color: white;
+			-webkit-transition: color 0.3s ease;
+			transition: color 0.3s ease;
+		}
+		
+		.nav_swe:hover {
+			color:#5B5478;
+			
+			-webkit-transition: color 0.3s ease-out;
+			transition: color 0.3s ease-out;
+		}
+		
 		.nav_sec {
 			display: inline-block;
-			padding: 0px 2vw;
-			
-			color: white;
-			
+			padding: 7px 2vw;
+			font-weight: bold;
+			background-color: white;
+			border-radius: 2vw;
+			color: #5B5478;
 			-webkit-transition: color 0.3s ease;
 			transition: color 0.3s ease;
 		}
 		
 		.nav_sec:hover {
-			color: #5A5377;
+			color: white;
+			background-color: #5B5478;
 			
 			-webkit-transition: color 0.3s ease-out;
 			transition: color 0.3s ease-out;
@@ -253,12 +291,13 @@
 			display: none;
 			position: absolute;
 			
-			background-color: #DBC554;
+			background-color: white;
+			border: solid 2px #5B5478;
 			opacity:0.98;
 			
 			width: 100%;
 			box-shadow: 5px 10px 8px rgba(0,0,0,0.2);
-			border-radius: 0px 0px 2vw 2vw;
+			border-radius: 2vw 2vw;
 		}
 
 		.dropdown-content a {
