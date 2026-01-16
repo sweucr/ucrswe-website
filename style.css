@@ -651,6 +651,11 @@
 		font-weight:normal;
 	}
 
+	.event-text-space {
+		display: flex;
+		flex-direction: column;
+	}
+
 	/* Make it responsive: Stack image on top for small screens */
 	@media (max-width: 600px) {
 		.event-content {
