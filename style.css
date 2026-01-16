@@ -426,13 +426,13 @@
 			display: inline-block;
 			
 			font-weight: bold;
-			color: #DBC554;
+			color: black;
 		}
 		
 		.content p a:after {
 			display: block;
 			
-			border-bottom: solid 1px #DBC554;
+			border-bottom: solid 1px white;
 			content: '';
 			
 			-webkit-transform: scaleX(0);
@@ -453,7 +453,7 @@
 		}
 		
 		.content p a:hover{
-			color: #DBC554;
+			color: white;
 		}
 		
 		@media only screen and (max-width: 1024px) {
@@ -549,7 +549,140 @@
 /*--end HOME--*/
 
 /*--start EVENTS--*/
-	#event_table {
+	.annual_description {
+		font-family: 'Albert Sans', sans-serif;
+		font-size: 1.5em;
+		text-align: center;
+		width:auto;
+		height: 130px;
+		background-color: #EDC0F7;
+		padding: 30px;
+		opacity: 60%;
+		border-radius: 50px;
+		color:black;
+		
+		margin: 0vh 19vw;
+	}
+
+	.newsletter_description {
+		font-family: 'Albert Sans', sans-serif;
+		font-size: 1.5em;
+		text-align: center;
+		width:auto;
+		height: 70px;
+		background-color: #EDC0F7;
+		padding: 30px;
+		opacity: 60%;
+		border-radius: 50px;
+		color:black;
+		
+		margin: 0vh 19vw;
+	}
+
+
+	/* The main container holding all dropdowns */
+	.events-stack {
+		display: flex;
+		flex-direction: column;
+		gap: 30px; /* Space between each event box */
+		margin: 20px auto;
+		width: 900px;
+	}
+
+	/* Individual Event Box */
+	.event-item1 {
+		border-radius: 20px;
+		background-color: #C6BCF2;
+		overflow:hidden;
+	}
+
+	/* The Clickable Header */
+	.event-item1 summary {
+		padding: 20px;
+		font-size: 1.5em;
+		font-family: 'Albert Sans', sans-serif;
+		font-weight: bold;
+		cursor: pointer;
+		background-color: #C6BCF2;
+		color: black;
+		list-style: none; /* Hides default triangle */
+	}
+
+	.event-item2 {
+		border-radius: 20px;
+		background-color: #F4E8AB;
+		overflow:hidden;
+	}
+
+	/* The Clickable Header */
+	.event-item2 summary {
+		padding: 20px;
+		font-size: 1.5em;
+		font-family: 'Albert Sans', sans-serif;
+		font-weight: bold;
+		cursor: pointer;
+		background-color: #F4E8AB;
+		color: black;
+		list-style: none; /* Hides default triangle */
+	}
+
+	/* The Inner Content */
+	.event-content {
+		display: flex;
+		flex-direction: row; /* Puts image next to text */
+		gap: 20px;
+		padding: 30px;
+		align-items: flex-start;
+		background-color: #C6BCF2;
+		font-size: 1.2em;
+		font-family: 'Albert Sans', sans-serif;
+		font-weight:normal;
+	}
+
+	.event-content2 {
+		display: flex;
+		flex-direction: row; /* Puts image next to text */
+		gap: 20px;
+		padding: 30px;
+		align-items: flex-start;
+		background-color: #F4E8AB;
+		font-size: 1.2em;
+		font-family: 'Albert Sans', sans-serif;
+		font-weight:normal;
+	}
+
+	/* Make it responsive: Stack image on top for small screens */
+	@media (max-width: 600px) {
+		.event-content {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.event-content img {
+		width: 350px; /* Fixed width for consistency */
+		border-radius: 10px;
+		border-width:4px;
+		border-color:#5B5478;
+		border-style:solid;
+	}
+
+	.event-content2 img {
+		width: 350px; /* Fixed width for consistency */
+		border-radius: 10px;
+		border-width:4px;
+		border-color:#DBC554;
+		border-style:solid;
+	}
+
+	.contact-email {
+		font-size: 0.85em;
+		font-style: italic;
+		margin-top: 10px;
+	}
+
+
+	/* #event_table {
 		text-align:center;
 	}
 	
@@ -663,7 +796,7 @@
 			width: 80vw;
 			height: auto;
 		}
-	}
+	} */
 
 /*--end EVENTS--*/
 	
