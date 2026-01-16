@@ -220,15 +220,15 @@
 	/*--start NAV--*/
 	
 		.nav_bar {
-			display: block;
+			display: flex;
+    		align-items: center;
+    		gap: 35px;
+			padding: 15px;
 			position: -webkit-sticky;
 			position: sticky;
 			top: 0;
 			
 			background-color: #B8AAEE;
-			
-			padding-top: 3vh;
-			padding-bottom: 3vh;
 			
 			text-align: center;
 			letter-spacing: 0.065vw;
@@ -240,22 +240,12 @@
 			z-index: 1;
 		}
 		
-		.nav_swe {
-			display: inline-block;
-			padding: 2px 3vw;
-			font-size: 1.5em;
-			font-weight:bolder;
-			color: white;
-			-webkit-transition: color 0.3s ease;
-			transition: color 0.3s ease;
+		.nav_logo {
+			height: 70px;    /* Adjust this value to make the logo smaller or larger */
+    		width: auto;     /* Keeps the logo from stretching or looking squashed */
+    		display: block;
 		}
 		
-		.nav_swe:hover {
-			color:#5B5478;
-			
-			-webkit-transition: color 0.3s ease-out;
-			transition: color 0.3s ease-out;
-		}
 		
 		.nav_sec {
 			display: inline-block;
