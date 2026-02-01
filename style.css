@@ -339,21 +339,59 @@
 	/*--start FOOTER--*/
 	
 		.footer {
-			display: block;
 			
-			background-color: #5A5377;
-			padding-top: 1vh;
-			padding-bottom: 1vh;
-			
+			background-color: #B8AAEE;
+			padding-top: 10vh;
+			padding-bottom: 5vh;
 			text-align: center;
-			
 			font-family: 'Albert Sans', sans-serif;
-			font-size: 1.25em;
 			color: white;
+			display: flex;
+			flex-direction: column; /* stack children vertically */
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.row {
+			display: flex;
+			flex-wrap: wrap; /* Allows items to wrap onto a new line if they exceed the container width */
+			justify-content: center; /* center horizontally */
+			align-items: center; /* center vertically */
+			gap:5px;
+		}
+
+		.column {
+			flex: auto; /* Prevents columns from stretching */
+			align-items: center;
+			gap: 30px;
+		}
+
+		.credit{
+			font-size: 1em;
+			font-weight: normal;
+			align-items: center;
+			padding-top: 4em;
+		}
+
+		.title{
+			font-size: 1.5em;
+			font-weight:bold;
+		}
+
+		.text{
+			font-size: 1em;
+			font-weight:lighter;
+		}
+
+		.footer-logo {
+			height: 170px;    /* Adjust this value to make the logo smaller or larger */
+    		width: auto;     /* Keeps the logo from stretching or looking squashed */
+    		display: block;
 		}
 		
 		.footer span {
-			color: #DBC554;
+			color: #5B5478;
 		}
 		
 		.top {
@@ -379,19 +417,33 @@
 			100% {opacity: 1;}
 		}
 		
-		.footer img {
-			vertical-align: center;
-			
-			padding: 0vh 7.5px;
-			
-			min-height: 30px;
-			max-height: 30px;
-		}
+			.footer img {
+				/* Footer images: preserve aspect ratio and prevent gallery rules from stretching them */
+				padding: 0vh 7.5px;
+				width: auto !important;
+				height: auto !important;
+				max-height: 36px; /* social icons size */
+				object-fit: contain;
+			}
+
+			/* Larger footer SWE logo (overrides the small icon sizing) */
+			.footer img.footer-logo {
+				width: auto !important;
+				height: auto !important;
+				max-height: 140px; /* adjust as needed */
+				padding: 0 12px;
+			}
 		
 		.footer a:hover {
 			animation-name: o-pulse-ity;
 			animation-duration: 3s;
 			animation-iteration-count: infinite;
+		}
+
+		.vertical-line {
+			border-left: 2px solid white; /* Creates the line on the left side */
+			height: 100px; /* Sets the length of the line */
+			margin: 0 20px; /* Adds space between the line and content */
 		}
 	
 	/*--end FOOTER--*/
