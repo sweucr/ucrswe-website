@@ -873,134 +873,112 @@
 
 	#officer_table {
 		text-align: center;
+		background-color: white;
+		width: 100vw; /* full-bleed */
+		position: relative;
+		left: 50%;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		box-sizing: border-box;
+		padding-top: 4vh;
+		padding-bottom: 4vh;
 	}
 
-	#officer_table table{
+	#officer_table table {
 		border-collapse: collapse;
 		margin-left: auto;
 		margin-right: auto;
-		
-		
 		color: #545759;
 	}
-	
-	#officer_table table, td { 
+
+	#officer_table table, #officer_table td {
 		vertical-align: top;
-		
 		min-width: 15vw;
 		max-width: 15vw;
-		
+		padding: 1vw;
 		text-align: center;
 	}
 
 	#officer_table table td img {
 		object-fit: cover;
-		
 		padding: 1vw;
-		
 		max-width: 85%;
 		min-width: 85%;
 		min-height: 13vw;
 		max-height: 13vw;
-		
-		border-style:groove;
+		border-style: groove;
 		border-color: #5A5377;
 		border-inline-color: inherit;
-		
-		
-		border-top-left-radius: .5px;
-		border-top-right-radius: .5px;
 		border-radius: 50%;
 		opacity: 0.825;
-		
 		-webkit-transition: all 1s;
-		transition: all 1s; 
+		transition: all 1s;
 	}
-	
+
 	#officer_table table td img:hover {
 		opacity: 1;
-		
 		-webkit-transition: all 0.35s;
-		transition: all 0.35s; 
+		transition: all 0.35s;
 	}
 
-	#officer_table table td .title {
-		font-family: 'Albert Sans', sans-serif;
-		font-size: 1.35em;
-	}
+	#officer_table table td .title { font-family: 'Albert Sans', sans-serif; font-size: 1.35em; }
+	#officer_table table td .name  { font-family: 'Albert Sans', sans-serif; font-size: 1.125em; }
+	#officer_table .email { padding-bottom: 1vh; }
 
-	#officer_table table td .name {
-		font-family: 'Albert Sans', sans-serif;
-		font-size: 1.125em;
-	}
-	
-	#officer_table .email {
-		padding-bottom: 1vh;
-	}
-	
 	#officer_table a {
 		display: inline-block;
-		
 		font-size: 0.9em;
 		font-weight: bold;
 		color: #DBC554;
 	}
-	
+
 	#officer_table a:after {
 		display: block;
-		
 		border-bottom: solid 1px #DBC554;
 		content: '';
-		
 		-webkit-transform: scaleX(0);
 		-webkit-transition: transform 250ms ease-in-out;
 		transform: scaleX(0);
 		transition: transform 250ms ease-in-out;
-	}
-	
-	#officer_table a:after {
 		-webkit-transform-origin: 100% 50%;
 	}
-	
+
 	#officer_table a:hover:after {
 		-webkit-transform: scaleX(1);
 		-webkit-transform-origin: 0% 50%;
 		transform: scaleX(1);
 		transform-origin: 0% 50%;
 	}
-	
-	#officer_table a:hover{
-		color: #DBC554;
-	}
-		
+
+	#officer_table a:hover { color: #DBC554; }
+
 	@media only screen and (max-width: 1024px) {
-
+		/* revert full-bleed on smaller screens */
 		#officer_table {
-			margin: 0;
-		}
-			
-		#officer_table table {
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-			
-		#officer_table table, td {
-			padding-bottom: 1.5vh;
-			padding: 2.1vw;
-			min-width: 20vw;
-			max-width: 20vw;
+			width: auto;
+			position: static;
+			margin-left: 0;
+			margin-right: 0;
+			padding-top: 2vh;
+			padding-bottom: 2vh;
 		}
 
-		#officer_table table td img {
-			object-fit: cover;
-			
-			max-width: 20vw;
-			min-width: 20vw;
-			min-height: 20vw;
-			max-height: 20vw;
-		}
+		#officer_table table { width: 100%; margin-left: auto; margin-right: auto; }
+		#officer_table table, #officer_table td { padding-bottom: 1.5vh; padding: 2.1vw; min-width: 20vw; max-width: 20vw; }
+		#officer_table table td img { max-width: 20vw; min-width: 20vw; min-height: 20vw; max-height: 20vw; }
 	}
+
+	@media only screen and (max-width: 480px) {
+		#officer_table { overflow-x: hidden; }
+		#officer_table table { width: 90%; margin-left: auto; margin-right: auto; }
+		#officer_table table, td { text-align: center; display: inline; }
+		#officer_table table td img { max-width: 65vw; min-width: 40vw; min-height: 40vw; max-height: 65vw; }
+		#officer_table .title { font-size: 1.75em; }
+		#officer_table .name  { font-size: 1.35em; }
+		#officer_table .email { font-size: 1.15em; }
+	}
+
+/*--end OFFICERS--*/
 	
 	@media only screen and (max-width: 480px) {
 		#officer_table {
