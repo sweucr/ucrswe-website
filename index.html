@@ -34,6 +34,42 @@
 	<link rel="stylesheet" href="./style.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:300" rel="stylesheet">
+	
+	<style>
+	/* Keep nav bar visible */
+	.nav_bar { position: sticky; top: 0; z-index: 120; background:#B8AAEE; }
+	/* Ensure events/FAQ area styles */
+	.events-stack { position: relative; }
+	.events-stack details { background: #fff; position: relative; z-index: 2; width: 100%; }
+	#faq-section { background: #fff; z-index: 60; position: relative; }
+	#faq-section .page_title { padding: 1rem 2rem; }
+	#faq-section + .content {
+		background: #fff;
+		padding: 1rem 2rem;
+		position: relative;
+		z-index: 50;
+		/* full-bleed across viewport */
+		width: 100vw;
+		box-sizing: border-box;
+		margin-left: calc(50% - 50vw);
+	}
+	.events-stack summary { list-style: none; position: relative; padding-right: 3rem; cursor: pointer; display: block; }
+	.events-stack summary::-webkit-details-marker { display: none; }
+	.events-stack summary::after {
+		content: "▾";
+		position: absolute;
+		right: 0.8rem;
+		top: 50%;
+		transform: translateY(-50%) rotate(0deg);
+		transition: transform 0.18s ease;
+		font-size: 1.4rem;
+		font-weight: normal;
+		line-height: 1;
+		color: black;
+	}
+	.events-stack details[open] summary::after { transform: translateY(-50%) rotate(180deg); }
+	</style>
+	
 </head>
 
 <body>
@@ -336,10 +372,114 @@
 		<section id="faq-section">
 		<div class="page_title">FAQ's</div>
 		</section>
-		<div class="content" id="home_desc" style="text-align:center">
-				<p>Coming Soon!
-			</div>
 		</div>
+
+		<div class = "content">
+			<div class="events-stack">
+				<details class="event-item1">
+					<summary>What is SWE?</summary>
+					<div class="event-content">
+						<img src="../images/banners/board_2025-2026.png" alt="EWI">
+						<div class = "event-text-space">
+							<p>
+							<b>SWE at UCR</b>
+								is a non-profit, educational, service organization that is driven by members who are 
+								passionate about supporting everyone to achieve their full potential in their careers 
+								as engineers and leaders.
+							</p>
+						</div>
+					</div>
+				</details>
+
+				<details class="event-item2">
+					<summary>Who can join SWE and how can I get involved?</summary>
+					<div class="event-content2">
+						<div class="text-block">
+							<div class = "event-text-space">
+								<p><b>All are welcome—no matter your background, major, or gender!</b></p>
+								<p>Register as a member on <a href="https://highlanderlink.ucr.edu/organization/swe" target="_blank">Highlander Link.</a></p>
+								<p>As a <b>general member</b> you can get involved by attending any of our events throughout the academic year! The more you attend, the more insight you
+								gain into SWE and the more you can connect with other members!</p>
+								<p>To get involved as a <b>board member</b>, our officer applications open in winter quarter! If you want to help us host technical or academic workshops, outreach to students in the Inland Empire, 
+									or just contribute to the community within UCR, apply when applications are released!</p>
+								<p>
+									<a href="" target="">Board Applications: Check back in Winter 2027!</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</details>
+
+				<details class="event-item1">
+					<summary>What types of opportunities does SWE offer?</summary>
+					<div class="event-content">
+						<div class="text-block">
+							<div class = "event-text-space">
+								<p><b>Academic, Professional, & Technical Development</b></p>
+								<p>SWE offers various opportunities for members to grow academically, professionally, and technically.
+								Throughout each quarter we host workshops and events to help members build their skills and knowledge.</p>
+								<p>Learn more by looking at our <b>'Upcoming Events'</b> section on the home page along with our '<b>Annual Events</b>' and <b>'Projects'</b> page!</p>
+								</p>
+							</div>
+						</div>
+					</div>
+				</details>
+
+				<details class="event-item2">
+					<summary>What types of events does SWE host?</summary>
+					<div class="event-content2">
+						<div class="text-block">
+							<div class = "event-text-space">
+								<p><b>Academic, Professional, Technical, & Social Events</b></p>
+								<p>We host a variety of events throughout the year, including technical workshops, professional development, and foster academic success.</p>
+								<list>
+									<li><b>Technical Workshops/Opportunities:</b> Cloud Computing, Agile Workflow, Team Tech, Beehive Projects more!</li>
+									<li><b>Professional Development:</b> Resume Workshop, Research Networking Night, Evening with Industry, Lab Tours, and more!</li>
+									<li><b>Academic Success:</b> Study Jams, Study Abroad Info Session, Master's Program Info Session, and more!</li>
+									<li><b>Social Events:</b> Game Night, SWE Carnival, Movie Night, and more!</li>
+								</list>
+								</p>
+							</div>
+						</div>
+					</div>
+				</details>
+
+				<details class="event-item1">
+					<summary>What are the projects offered?</summary>
+					<div class="event-content">
+						<div class="text-block">
+							<div class = "event-text-space">
+								<p><b>Team Tech & SWE BeeHive - All engineers from different backgrounds are encouraged to apply!</b></p>
+								<p><b>Team Tech:</b> SWE's project-based team that competes annually at the SWE Conference. Each year the scope of the project changes. 
+								This year Team Tech will be partnering up with R'Garden!</p>
+								<p><b>SWE BeeHive:</b> SWE BeeHive is a new Project Program @ UCR that introduces a interdisciplinary project designed by students to 
+								provide students with hands-on experience in project development and team leadership. </p>
+								<p>Learn more about our projects on our <b>'Projects'</b> page!</p>
+							</div>
+						</div>
+					</div>
+				</details>
+
+				<details class="event-item2">
+					<summary>How do I stay up to date on all SWE opportunities?</summary>
+					<div class="event-content2">
+						<div class="text-block">
+							<div class = "event-text-space">
+								<p><b>Follow our socials!</b> 
+								Follow us on Instagram, join are discord, or subscribe to our newsletter!
+								We are always updating our socials with new upcoming events and opportunities!
+								Find and follow our socials in our footer below!</p>
+								<p>
+								</p>
+							</div>
+						</div>
+					</div>
+				</details>
+			</div>
+			<br>
+			<br>
+		</div>
+
 
 		<!-- <div class="page_title">DONATIONS</div>
 			<div class="content" id="home_desc">
