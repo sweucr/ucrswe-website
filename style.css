@@ -622,7 +622,6 @@
 		background-color: rgba(237,192,247,0.6);
 		border-radius: 50px;
 		color:black;
-	
 		margin: 0vh 19vw;
 	}
 
@@ -630,15 +629,46 @@
 		font-family: 'Albert Sans', sans-serif;
 		font-size: 1.5em;
 		text-align: center;
-		width:auto;
-		height: 70px;
-		background-color: #EDC0F7;
-		padding: 30px;
+		max-width: 800px;
 		background-color: rgba(237,192,247,0.6);
+		padding: 24px 30px;
 		border-radius: 50px;
-		color:black;
-		
-		margin: 0vh 19vw;
+		color: black;
+		margin: 1.25rem auto; /* center with vertical spacing */
+	}
+
+	.newsletter_subscribe {
+		display: block;
+		text-align: center;
+		max-width: 480px;
+		margin: 0.75rem auto 1.5rem auto; /* center and stack under description */
+		padding: 70px;
+		background: transparent;
+	}
+
+	.newsletter_subscribe a {
+		/* display: inline-block; */
+		text-align: center;
+		width: auto;
+		padding: 1.5rem 1.8rem;
+		font-family: 'Albert Sans', sans-serif;
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: #5B5478;
+		background: #ffffff;
+		border: 3px solid #5B5478;
+		border-radius: 999px;
+		margin: 0 auto;
+		text-decoration: none;
+		transition: all 180ms ease;
+	}
+
+	.newsletter_subscribe a:hover,
+	.newsletter_subscribe a:focus {
+		background: #5B5478; /* dark purple background on hover */
+		color: #ffffff; /* white text on hover */
+		border-color: #ffffff; /* white outline on hover */
+		outline: none;
 	}
 
 
