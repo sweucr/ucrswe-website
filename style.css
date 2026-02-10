@@ -539,8 +539,7 @@
 		font-size: 1.3em;
 		color: black;
 		margin: 0vh 25vw;
-		background-color: #B8AAEE;
-		opacity: 80%;
+		background-color: rgba(184,170,238,0.85); /* faded purple background without affecting text */
 		border-radius: 50px;
 		padding: 40px;
 	}
@@ -557,10 +556,9 @@
 
 	.intro_desc {
 		height: 400px;
-		background-color: #B8AAEE;
+		background-color: rgba(184,170,238,0.85);
 		padding: 30px;
 		border-radius: 50px;
-		opacity: 80%;
 	}
 	
 	.tooltip {
@@ -621,7 +619,7 @@
 		height: 130px;
 		background-color: #EDC0F7;
 		padding: 30px;
-		opacity: 60%;
+		background-color: rgba(237,192,247,0.6);
 		border-radius: 50px;
 		color:black;
 	
@@ -636,7 +634,7 @@
 		height: 70px;
 		background-color: #EDC0F7;
 		padding: 30px;
-		opacity: 60%;
+		background-color: rgba(237,192,247,0.6);
 		border-radius: 50px;
 		color:black;
 		

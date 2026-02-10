@@ -28,6 +28,23 @@
 		<link rel="icon" href="../assets/swe/swe_gear.png">
 		<link rel="stylesheet" href="../style.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:300" rel="stylesheet"> 
+		<style>
+		/* Custom triangle placed near end of summary and flips on open/close */
+		.events-stack details { position: relative; }
+			.events-stack summary { list-style: none; position: relative; padding-right: 3rem; cursor: pointer; }
+		.events-stack summary::-webkit-details-marker { display: none; }
+		.events-stack summary::after {
+			content: "▾";
+			position: absolute;
+			right: 0.9rem;
+			top: 50%;
+			transform: translateY(-50%) rotate(0deg);
+			transition: transform 0.2s ease;
+			font-size: 1.4rem;
+			line-height: 1;
+		}
+		.events-stack details[open] summary::after { transform: translateY(-50%) rotate(180deg); }
+		</style>
 	</head>
 
 	<body>
@@ -98,7 +115,7 @@
 		<div class = "content">
 			<div class="events-stack">
 				<details class="event-item1">
-					<summary>Evening with Industry (EWI) &#x25BE;</summary>
+					<summary>Evening with Industry (EWI)</summary>
 					<div class="event-content">
 						<img src="../images/event_pics/2025/EWI1.png" alt="EWI">
 						<div class = "event-text-space">
@@ -116,7 +133,7 @@
 				</details>
 
 				<details class="event-item2">
-					<summary>Research Networking Night (RNN) &#x25BE;</summary>
+					<summary>Research Networking Night (RNN)</summary>
 					<div class="event-content2">
 						<img src="../images/event_pics/2025/RNN2.jpeg" alt="RNN">
 						<div class="text-block">
@@ -125,7 +142,7 @@
 									is an event held by the Society of Women Engineers (SWE). The purpose of this event is to bring faculty, professors, graduate students and undergraduate students from sciences and engineering together. 
 									Our goal is for motivated undergraduates to make connections, conceptualize the expectations of the research field and to discover possible research positions for the future.</p>
 								<p>
-									<a href="" target="_blank">Event Info: January 22nd from 5:00PM - 8:00PM @ HUB 302 South</a>
+									<a href="" target="_blank">Event Info: Check back in Winter 2027!</a>
 								</p>
 							</div>
 						</div>
@@ -133,7 +150,7 @@
 				</details>
 
 				<details class="event-item1">
-					<summary>Engineering R'Future (ERF) &#x25BE;</summary>
+					<summary>Engineering R'Future (ERF)</summary>
 					<div class="event-content">
 						<img src="../images/event_pics/2025/ERF1.png" alt="ERF">
 						<div class="text-block">
@@ -142,7 +159,7 @@
 								is an event dedicated towards high school women to give them a better perspective on the different engineering majors that UCR offers. 
 								Throughout the day, students will be guided by passionate UCR engineering students and have the opportunity to meet with other high school women interested in engineering. 
 								Students will gain a comprehensive understanding of engineering and college to help make their career decisions clearer.</p>
-								<p><a href="" target="_blank">Event Info: Stay tuned for updates!</a>
+								<p><a href="" target="_blank">Event Info: Check back in Winter 2027!</a>
 								</p>
 							</div>
 						</div>
@@ -150,7 +167,7 @@
 				</details>
 
 				<details class="event-item2">
-					<summary>Bourns Engineering Day (BNGO) &#x25BE;</summary>
+					<summary>Bourns Engineering Day (BNGO)</summary>
 					<div class="event-content2">
 						<img src="../images/event_pics/2025/BNGO2.png" alt="BCED">
 						<div class="text-block">
