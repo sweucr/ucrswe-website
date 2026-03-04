@@ -613,16 +613,16 @@
 /*--start EVENTS--*/
 	.annual_description {
 		font-family: 'Albert Sans', sans-serif;
-		font-size: 1.5em;
+		font-size: 1.4em;
 		text-align: center;
 		width:auto;
-		height: 130px;
+		height: 170px;
 		background-color: #EDC0F7;
 		padding: 30px;
 		background-color: rgba(237,192,247,0.6);
 		border-radius: 50px;
 		color:black;
-		margin: 0vh 19vw;
+		margin: 0vh 18vw;
 	}
 
 	.newsletter_description {
@@ -718,6 +718,34 @@
 		list-style: none; /* Hides default triangle */
 	}
 
+	/* Custom disclosure triangle for summaries */
+	.events-stack summary {
+		position: relative; /* container for the pseudo-element */
+	}
+
+	.events-stack summary::after {
+		content: '\25BE'; /* small down-pointing triangle */
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%) rotate(0deg);
+		transition: transform 0.2s ease;
+		font-size: 0.9em;
+		color: #5B5478;
+		pointer-events: none;
+	}
+
+	/* Rotate triangle when the details is open */
+	details[open] > summary::after {
+		transform: translateY(-50%) rotate(180deg);
+	}
+	.event-title {
+		font-size: 1.2em;
+		font-family: 'Albert Sans', sans-serif;
+		font-weight: bold;
+		color: #5B5478;
+	}
+
 	/* The Inner Content */
 	.event-content {
 		display: flex;
@@ -726,7 +754,7 @@
 		padding: 30px;
 		align-items: flex-start;
 		background-color: #C6BCF2;
-		font-size: 1.2em;
+		font-size: 1em;
 		font-family: 'Albert Sans', sans-serif;
 		font-weight:normal;
 	}
@@ -738,7 +766,7 @@
 		padding: 30px;
 		align-items: flex-start;
 		background-color: #F4E8AB;
-		font-size: 1.2em;
+		font-size: 1em;
 		font-family: 'Albert Sans', sans-serif;
 		font-weight:normal;
 	}
