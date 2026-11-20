@@ -308,6 +308,15 @@
 			border-radius: 2vw 2vw;
 		}
 
+		.dropdown-content::before {
+			content: "";
+			position: absolute;
+			top: -12px;
+			left: 0;
+			right: 0;
+			height: 12px;
+		}
+
 		.dropdown-content a {
 			padding: 2vh 1vw;
 			
@@ -1387,7 +1396,8 @@
 	}
 
 	#officer_table table {
-		width: min(1120px, calc(100% - 32px));
+		width: 100%;
+		max-width: 1120px;
 		table-layout: fixed;
 	}
 
@@ -1641,7 +1651,8 @@
 }
 
 #officer_table table {
-	width: min(1120px, calc(100% - 32px));
+	width: 100%;
+	max-width: 1120px;
 	table-layout: fixed;
 }
 
